@@ -307,7 +307,9 @@ class RequestINN
         $config = array(
             //'adapter' => 'HTTP_Request2_Adapter_Curl',
             'connect_timeout' => self::CONNECT_TIMEOUT, 
-            'timeout' => self::CONNECT_TIMEOUT
+            'timeout' => self::CONNECT_TIMEOUT,
+            'ssl_verify_peer' => false,
+            'ssl_verify_host' => false,
         );
 
         /*
